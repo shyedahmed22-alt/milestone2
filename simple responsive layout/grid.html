@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .contianer{
+            display: grid;
+            /* grid-template-columns: 200px 200px; */
+            /* grid-template-columns: repeat(2, 200px) 240px 300px; */
+            grid-template-columns: repeat(4, 1fr );
+        }
+        .item{
+            border: 2px solid red;
+        }
+        .calander{
+            max-width: 50%;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(7, 50px);
+            gap: 10px;
+        }
+        .day, .date{
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            border-radius: .5em;
+        }
+        .day{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Grid Layout: 2D layout</h2>
+    <div class="contianer">
+        <div class="item">item - 1</div>
+        <div class="item">item - 2</div>
+        <div class="item">item - 3</div>
+        <div class="item">item - 4</div>
+        <div class="item">item - 5</div>
+        <div class="item">item - 6</div>
+        <div class="item">item - 7</div>
+        <div class="item">item - 8</div>
+        <div class="item">item - 9</div>
+        <div class="item">item - 10</div>
+        <div class="item">item - 11</div>
+        <div class="item">item - 12</div>
+        <div class="item">item - 13</div>
+        <div class="item">item - 14</div>
+        <div class="item">item - 15</div>
+        <div class="item">item - 16</div>
+        <div class="item">item - 17</div>
+        <div class="item">item - 18</div>
+        <div class="item">item - 19</div>
+        <div class="item">item - 20</div>
+    </div>
+<div class="calander">
+    <div class="day">Sun</div>
+    <div class="day">Mon</div>
+    <div class="day">Tue</div>
+    <div class="day">Wed</div>
+    <div class="day">Thu</div>
+    <div class="day">Fri</div>
+    <div class="day">Sat</div>
+    <div class="date">29</div>
+    <div class="date">30</div>
+    <div class="date">31</div>
+    <div class="date">1</div>
+    <div class="date">2</div>
+    <div class="date">3</div>
+    <div class="date">4</div>
+    <div class="date">5</div>
+    <div class="date">6</div>
+    <div class="date">7</div>
+    <div class="date">8</div>
+    <div class="date">9</div>
+    <div class="date">10</div>
+    <div class="date">11</div>
+    <div class="date">12</div>
+    <div class="date">13</div>
+    <div class="date">14</div>
+    <div class="date">15</div>
+    <div class="date">16</div>
+    <div class="date">17</div>
+    <div class="date">18</div>
+    <div class="date">19</div>
+    <div class="date">20</div>
+    <div class="date">21</div>
+    <div class="date">22</div>
+    <div class="date">23</div>
+    <div class="date">24</div>
+    <div class="date">25</div>
+    <div class="date">26</div>
+    <div class="date">27</div>
+    <div class="date">28</div>
+    <div class="date">29</div>
+    <div class="date">30</div>
+    <div class="date">01</div>
+    <div class="date">02</div>
+</div>
+</body>
+</html>
