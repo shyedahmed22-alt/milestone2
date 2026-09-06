@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+       header , nav , main, .sidebar, .ad, footer{
+        background-color: aqua;
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+       }
+       nav ul li a{
+        text-decoration: none;
+       }
+       nav ul{
+        list-style: none;
+       }
+       header{
+        grid-area: header;
+       }
+       nav{
+        grid-area: nav;
+       }
+       main{
+        grid-area: main;
+       }
+       .sidebar{
+        grid-area: sidebar;
+        margin-bottom: 15px;
+       }
+       .ad{
+        grid-area: ad;
+       }
+       footer{
+        grid-area: footer;
+       }
+       .container{
+        display: grid;
+        gap: 15px;
+        grid-template-areas: 
+        "header header header header"
+        "nav    main   main   sidebar"
+        "nav    main   main   ad"
+        "footer footer footer footer";
+       }
+       @media screen and (max-width:576px) {
+        .container{
+            grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "slidebar"
+            "ad"
+            "footer"
+        }
+        .sidebar{
+            margin-bottom: 20px;
+        }
+        nav ul{
+            display: flex;
+            gap: 20px;
+        }
+       }
+    </style>
+</head>
+<body class="container">
+    <header>
+        <h1>The header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Nav 1</a></li>
+            <li><a href="">Nav 2</a></li>
+            <li><a href="">Nav 3</a></li>
+        </ul>
+    </nav>
+    <main>
+            <h1>Main article Area</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates, natus quam architecto, amet officiis deserunt eaque itaque sint excepturi nobis fuga molestiae dicta nihil ipsa minus facere, asperiores at.</p>
+    </main>
+    <aside>
+        <div class="sidebar">
+            <h4>sidebar</h4>
+        </div>
+        <div class="ad">
+            <h4>Advertisement</h4>
+        </div>
+    </aside>
+    <footer>
+            <h1>footer</h1>
+    </footer>
+
+</body>
+</html>

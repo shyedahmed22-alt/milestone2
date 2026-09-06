@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College pics</title>
+    <style>
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .row{
+            height: 400px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+
+        }
+        .vertical-split{
+            height: calc( (100% - 5px)/2 );
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Picture College</h1>
+    </header>
+    <main>
+        <div class="row">
+            <img src="https://images.unsplash.com/photo-1589370081113-ddeef9a37aa5?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="row">
+            <div><img src="https://images.unsplash.com/photo-1526667942879-37dee646a80c?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+            <div> <img src="https://images.unsplash.com/photo-1522314877021-967b7d9ee1ca?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+            <div class="vertical-split">
+                <img src="https://images.unsplash.com/photo-1740393068166-d1a3f24cfad2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGZoZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <img src="https://images.unsplash.com/photo-1567140822252-2c081eab6daa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGZoZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="https://images.unsplash.com/photo-1610171267112-3b9c975a8b18?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fGZoZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <div class="container">
+                    <img src="https://images.unsplash.com/photo-1642552668127-4fd9d2ee81fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fGZoZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1642552668127-4fd9d2ee81fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fGZoZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1642552668127-4fd9d2ee81fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fGZoZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1642552668127-4fd9d2ee81fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fGZoZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1597979732130-9d2ad18df38b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxmaGR8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
