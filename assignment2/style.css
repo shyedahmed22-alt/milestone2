@@ -35,9 +35,54 @@ header, main{
 .banner-pic{
     width: 100%;
 }
+/* OUR PLANTS */
+.our_plants{
+    margin-bottom: 250px;
+}
+/* FLOWER AND PLANTS LOVER */
+.trusted{
+    margin-bottom: 0;
+}
+/* LATEST DEALS */
+.deals{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.left_deal{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.bloom{
+    background-image: url(assets/deal-bloom.png);
+    opacity: 80%;
+    background-repeat: no-repeat;
+    width: 366px;
+    height: 200px;
+    border-radius: 22px;
+}
+.ana{
+    background-image: url(assets/deal-ana.png);
+    background-repeat: no-repeat;
+    opacity: 80%;
+    width: 366px;
+    height:200px;
+    border-radius: 22px;
+}
+.right_deal{
+     background-image: url(assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    width: 743px;
+    border-radius: 22px;
+}
 @media screen and (max-width: 576px) {
-    header, main, nav{
+    header, main{
         margin: 0;
+    }
+    nav{
+        margin: 20px 0 50px 0;
     }
     nav li{
         display: none;
@@ -47,6 +92,7 @@ header, main{
     }
     .banner{
         flex-direction: column-reverse;
+        gap: 30px;
     }
     .items_cont{
         grid-template-columns: repeat(2, 1fr);
@@ -54,6 +100,28 @@ header, main{
     button{
         padding: 0;
     }
-
-    
+    .trusted_cont{
+        flex-direction: column;
+    }
+    #badge{
+        display: none;
+    }
+    .our_plants{
+    margin-bottom: 50px;
+    }
+    .trusted{
+    margin-bottom:150px;
+    }
+    .deals{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .right_deal{
+        width: 100%;
+        height: 250px;
+    }
+    .bloom,.ana{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
