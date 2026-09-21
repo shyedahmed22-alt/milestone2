@@ -1,0 +1,59 @@
+/* Fonts and common styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.section_title{
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    font-size: 3.125rem;
+}
+section{
+    margin-bottom: 120px;
+}
+.dis-color{
+    color:rgba(0, 0, 0, 0.5)
+}
+/* Header and banner styles */
+header, main{
+    margin: 0 150px;
+}
+.banner-title{
+    font-weight: bolder;
+}
+.banner-pic{
+    width: 100%;
+}
+@media screen and (max-width: 576px) {
+    header, main, nav{
+        margin: 0;
+    }
+    nav li{
+        display: none;
+    }
+    #cart{
+        display: flex;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .items_cont{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    button{
+        padding: 0;
+    }
+
+    
+}
